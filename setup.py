@@ -18,7 +18,7 @@ setup(
     name='django-setlinks',
     version='0.1',
     packages=['setlinks'],
-    install_requires=['django>=1.6'],
+    install_requires=['django'],
     include_package_data=True,
     license='BSD License',
     description='A simple Django app to conduct Web-based setlinks.',
