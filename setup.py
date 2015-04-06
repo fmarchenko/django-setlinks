@@ -5,8 +5,9 @@ __author__ = "Fedor Marchenko"
 __email__ = "mfs90@mail.ru"
 __date__ = "Apr 02, 2015"
 
+from setuptools import setup, find_packages
 import os
-from setuptools import setup
+import setlinks
 
 with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
     README = readme.read()
@@ -16,16 +17,17 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-setlinks',
-    version='0.1',
-    packages=['setlinks'],
-    install_requires=['django'],
+    version=setlinks.__version__,
+    packages=find_packages(),
+    # package_data={'setlinks.templates': ['*']},
+    install_requires=['django>=1.5'],
     include_package_data=True,
     license='BSD License',
     description='A simple Django app to conduct Web-based setlinks.',
     long_description=README,
     url='http://www.example.com/',
-    author='Fedor Marchenko',
-    author_email='mfs90@mail.ru',
+    author=setlinks.__author__,
+    author_email=setlinks.__email__,
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',

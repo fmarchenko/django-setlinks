@@ -1,0 +1,2 @@
+recursive-include setlinks/templates *
+recursive-exclude * *.pyc

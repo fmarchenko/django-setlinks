@@ -4,4 +4,4 @@
 __author__ = "Fedor Marchenko"
 __email__ = "mfs90@mail.ru"
 __date__ = "Apr 02, 2015"
-
+__version__ = "0.1"
